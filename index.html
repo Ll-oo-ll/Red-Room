@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="description" content="It's dangerous be careful, Red Room about..">
+  <meta name="theme-color" content="red">
+  <title>Red Room</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap'); 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Creepster', cursive;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+body {
+  background: red;
+}
+nav{
+  z-index: 555;
+}
+ul{ 
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  background: red;
+  position: fixed;
+  margin: 0px auto 10px;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px 1px black;
+  a{  
+  color: red;
+  background: black;
+  padding: 11px 6px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 2px double red;
+  outline: 2px double black;
+  text-transform: capitalize;
+  box-shadow: 0 0 10px red inset;
+  } 
+  li:hover{
+  border-radius: 5px;
+    transform: scale(1.1);
+  }
+  li {
+  padding: 2px;
+  display: inline-flex;
+  align-items: center ;
+  box-sizing: border-box;
+  transition: all .4s linear;
+  box-shadow: 0 0 10px 1px black;
+  }
+}
+main {
+   margin: 100px auto 20px;
+   #sec1{
+     padding-top: 30px;
+     width: 100vw;
+     text-align: center;
+     user-select: none;
+     h1{
+       margin: auto;
+       color: red;
+       padding: 5px ;
+       font-family: ;
+       text-shadow: 0 0 10px black;
+       letter-spacing: 5px; 
+       font-size: 40px ;
+       font-weight: 900;
+       animation: l 2s infinite ;
+       user-select: none;
+     }
+     p{
+       padding: 20px;
+       line-height: 25px;
+       b{
+         color: white;
+         letter-spacing: 2px;
+         text-shadow: 0 0 10px white ;
+       }
+     }
+     h2{
+       text-align: left;
+       text-decoration: underline white;
+       color: white;
+       margin: 10px 5px ;
+       padding-left: 10px;
+       user-select: all;
+       
+     }
+     span {
+     padding: 10px;
+    
+       b{
+         color: red;
+         text-shadow: 0 0 10px black;
+       }
+     }
+     h2:before{
+       content: '\2022';
+       color: white;
+       padding-left: 10px ;
+       padding-right: 10px ;
+       text-decoration: white overline ;
+     }
+     a{
+       color: black;
+       letter-spacing: 2px ;
+       font-size:23px ;
+       margin: 10px;
+     }
+  
+   }
+   #sec3{
+   padding-top: 30px;
+     width: 100vw;
+     input , textarea{
+       display: block;
+       padding: 5px;
+       outline: 4px double red;
+       border: none;
+       border-left: 6px double black;
+       background: red;
+       box-shadow: 0 0 20px 1px black;
+       color: black;
+       font-weight: 800;
+       font-size: 17px ;
+       border-radius: 10px;
+       margin:10px auto;  
+       letter-spacing: 2px;   
+       cursor: pointer; 
+     }
+     textarea{
+       margin-top: 30px;
+       outline: 4px double red;
+       border: 6px double black;
+     }
+     textarea::placeholder{
+       color: white;
+       font-family: 'Creepster', cursive;
+       letter-spacing: 3px;
+       font-size: 10px;
+     }
+     [type="button"]{
+       color: black;
+       margin-top: 50px;
+       padding: 5px 20px;
+       border: none;
+       letter-spacing: 5px;
+       border-bottom: 6px double black;
+       font-size: 20px;
+       transition: all .4s ease;
+     }
+     label{
+       display: block;
+       margin: 20px auto;
+       width: 30px;
+       font-weight: 700; 
+       fotn-size:20px ;
+       letter-spacing: 4px;
+       text-decoration: 4px underline white;       
+     }
+     label::first-letter{
+       color: white;
+       font-size: 22px;
+       font-weight: 900;
+     }
+     [type="button"]:hover , textarea:focus , input:focus{
+       transform: scale(1.2);
+       cursor: pointer;
+       color: white;
+       border-color: white;
+     }
+   }
+}
+@keyframes l {
+        0% , 100% { letter-spacing: 5px; }
+        50%{ letter-spacing: 9px; }
+}  
+.all{  
+     margin: 100px auto;
+     display: none;
+     z-index: 2;
+    .error{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      align-items: center;
+      background: red;
+      box-shadow: 0 0 10px 1px black;
+      text-align: center;
+      position: relative ;
+      margin: 50px auto;
+      padding: 10px;
+      width: 200px;
+      height: 180px;
+      p{
+        
+        b{
+          color : red;
+          text-shadow:0 0 1px black; 
+        }
+      }
+      .button{
+        display: flex;
+        flex-flow: row ;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        [type="button"]{
+          color: black;
+          border: 1px solid black;
+       margin-top: 10px;
+       padding: 2px;
+       border-radius: 10px;
+       background :red;
+       letter-spacing: 5px;
+       border-bottom: 6px double black;
+       font-size: 17px;
+       box-shadow: 0 0 10px black;
+       transition: all .4s ease;
+          
+        }
+        [type="button"]:hover , textarea:focus , input:focus{
+       transform: scale(1.2);
+       cursor: pointer;
+       color: white;
+       border-color: white;
+     }
+      }
+    }
+  }
+  
+  
+  
+  
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19px;
+  position: absolute;
+  transform: scale(1);
+  
+}
+.clock{
+  background: red;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 0 20px 2px black;
+  transition: all .5s ;
+}
+.krap{
+  width: 110px;
+  height: 110px;
+  background:  black;
+  clip-path: polygon(
+    50% 0%,
+    52% 35%,
+    51.2% 50%,
+    50.6% 50.5%,
+    49.4% 50.5%,
+    48.2% 50%,
+    48% 35%,
+    50% 0%
+  );
+ 
+}
+
+.krap1{
+  width: 110px;
+  height: 90px;
+  background: black;
+  clip-path: polygon(
+    50% 0%,
+    55% 28%,
+    52% 50%,
+    51% 50.5%,
+    49% 50.5%,
+    48% 50%,
+    45% 28%,
+    50% 0%
+  );
+  position: absolute;
+}
+.circle{
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  background: black;
+  z-index: 1;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+@media(min-width: 1000px){
+  .container{
+    transform: scale(2.5);
+  }
+}
+@media(max-width: 760px){
+  .container{
+    transform: scale(1.5);
+  }
+}
+.krap2{
+  width: 110px;
+  height: 110px;
+  background: black;
+  clip-path: polygon(
+    50% 0%,
+    53% 35%,
+    52% 50%,
+    51% 50.5%,
+    49% 50.5%,
+    48% 50%,
+    47% 35%,
+    50% 0%
+  );
+  position: absolute;
+ 
+  }
+#sec2{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 300px;
+}
+hr{
+  border: black 2px solid ;
+  height: 5px;
+  margin-top: 60px;
+  background: red;
+}
+::selection{
+  background: black;
+  color: red;
+  transform: scale(1.05);
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  border-top: double black 5px ;
+  .disq{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid black 4px;
+    background: red;
+  }
+
+}
+a{
+
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+  .top{
+  width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid black 4px;
+    background: red;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    box-shadow: 3ox 3px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3{
+      font-weight: 900;
+      font-size: 22px;
+      transform: translateY(-2px);
+    }
+}
+}
+  </style>
+</head>
+<body>
+  <a href="#sec1" id="top">
+    <div class="top">
+    <h3>&#8593;</h3>
+  </div>
+  </a>
+  <div class="all">
+  <div class="error">
+    <p>You will be directed the <b>Red Room</b> after 5 seconds. Be careful <span id="span"> </span></p>
+    <div class="button">
+      <input id="c" type="button" value="Cencel">
+      <input id="o" type="button" value="Ok">
+    </div>
+  </div>
+</div>
+<div class="red">
+  <nav>
+    <ul>
+      <li><a href="#sec1">articl</a></li>
+      <li><a href="#sec3">contact us</a></li>
+      <li><a href="#sec2">about</a></li>      
+    </ul>
+  </nav>
+  <main>
+    <section id="sec1">
+      <h1>RED ROOM</h1>
+      <p>
+The <b>internet</b> is one of the most powerful tools of our modern age, but it carries with it hidden <b>dangers</b> that require vigilance. The so-called <b>"red room"</b> is known to be one of the most dangerous corners of the internet, rumored to contain <b>illegal</b> and <b>unethical</b> content. Users should avoid accessing such sites at all costs, as they can lead to exposure to harmful material or becoming victims of <b>fraud</b> and <b>cybercrimes</b>. To ensure your <b>online safety</b>, always visit <b>trusted</b> websites and avoid sharing your personal information with any <b>unverified</b> sources.
+      </p>
+      <a href="#">More...</a>
+      <h2>Use Strong Passwords</h2>
+<span>
+    <b>Use strong passwords</b>: Ensure you use complex and unique passwords for each account. Utilize a mix of uppercase and lowercase letters, numbers, and symbols.
+</span>
+
+<h2>Enable Two-Factor Authentication</h2>
+<span>
+    <b>Enable two-factor authentication</b>: Enable two-factor authentication on your accounts for enhanced security. This adds an extra layer of protection by requiring a verification code in addition to your password.
+</span>
+
+<h2>Avoid Sharing Personal Information</h2>
+<span>
+    <b>Avoid sharing personal information</b>: Be cautious about sharing personal information online, especially on public forums and websites.
+</span>
+
+<h2>Use Security Software</h2>
+<span>
+    <b>Use security software</b>: Ensure you have up-to-date antivirus and firewall software on all your devices.
+</span>
+
+<h2>Keep Applications and Systems Updated</h2>
+<span>
+    <b>Keep applications and systems updated</b>: Regularly update all applications and systems to protect yourself from security vulnerabilities.
+</span>
+
+<h2>Beware of Untrusted Links</h2>
+<span>
+    <b>Beware of untrusted links</b>: Avoid clicking on suspicious links in emails or on untrusted websites.
+</span>
+
+<h2>Use Virtual Private Networks (VPNs)</h2>
+<span>
+    <b>Use Virtual Private Networks (VPNs)</b>: Use a VPN when connecting to the internet in public places to encrypt your data and protect your privacy.
+</span>
+
+<h2>Review Privacy Settings</h2>
+<span>
+    <b>Review privacy settings</b>: Regularly review and update your privacy settings on your accounts to ensure the highest level of protection.
+</span>
+
+<h2>Clear Unnecessary Data</h2>
+<span>
+    <b>Clear unnecessary data</b>: Regularly clear your browsing data and cookies to maintain your privacy.
+</span>
+
+<h2>Be Mindful of What You Post</h2>
+<span>
+    <b>Be mindful of what you post</b>: Think twice before posting anything online, and remember that what you share can stay on the internet for a long time.
+</span>
+    </section><hr>
+    <section id="sec3">
+      <form novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" maxlength="10">
+        <label for="email">Email</label>
+        <input type="email" id="email" maxlength="150">
+        <textarea id="message" rows="6" placeholder="Your Message..." maxlength="200"></textarea>
+        <input onclick="send()" type="button" value="Send">
+      </form>
+    </section><hr>
+    <section id="sec2">
+      <div class="container">
+    <div class="circle"></div>
+    <div class="clock">
+    <div class="krap"></div>
+    <div class="krap2"></div>
+    <div class="krap1"></div>
+  </div>
+  </div>
+    </section>
+  </main>
+  <footer>
+    <div class="disq"></div>
+    <p>&copy; 2024 Red Room. Copyright.</p>
+
+    <div class="disq"></div>
+  </footer>
+</div>
+<script>
+  let p= document.getElementById('span');
+let bar = document.querySelector('.all');
+let red = document.querySelector('.red');
+let c = document.getElementById('c');
+let o = document.getElementById('o');
+let t=0;
+let tow = 0 ;
+let all = setInterval(function () {
+  tow++;
+  function none() {
+  let num = setInterval(function () {
+  p.innerText = '';
+    t++;
+  p.innerText += `   ${t}`
+  if (t==5) {
+    clearInterval(num);
+    t=0;
+  }
+  },1000)
+}
+setTimeout(function () {
+  bar.style.display='block';
+  red.style.display='none';  document.getElementById('top').style.display='none';
+  none();
+},5000)
+setTimeout(function () {
+  c.onclick = function () {
+  bar.style.display='none';
+  red.style.display='block';
+document.getElementById('top').style.display='block';
+}
+},10000)
+setTimeout(function () {
+  o.onclick = function () {
+  bar.style.display='none';
+  red.style.display='block';  document.getElementById('top').style.display='block';
+  location.href="https://www.redroom.oi"
+}
+},10000)
+if (tow==2) {
+  clearInterval(all)
+}
+},20000)  
+
+let k = document.querySelector('.krap');
+let k1 = document.querySelector('.krap1');
+let k2 = document.querySelector('.krap2');
+setInterval(function () {
+  let time = new Date();
+  let s = time.getSeconds();
+  k.style.transform = `rotate(${s*6}deg)`;
+  if (s==0) {
+    document.querySelector('.clock').style.cssText=`background : rgb(0,255,0); box-shadow : 0 0 20px 2px rgb(0,255,0);`;
+    setTimeout(function () {
+       document.querySelector('.clock').style.cssText=`background : rgb(255,0,0); box-shadow : 0 0 20px 2px black;`;
+    },1000)
+  }
+},1000)
+
+setInterval(function () {
+  let time = new Date();
+  let m = time.getMinutes();
+ k2.style.transform = `rotate(${m*6}deg)`;
+  if (m==0) {
+    document.querySelector('.clock').style.cssText=`background : rgb(0,255,0); box-shadow : 0 0 20px 2px rgb(0,255,0);`;
+    setTimeout(function () {
+       document.querySelector('.clock').style.cssText=`background : rgb(255,0,0); box-shadow : 0 0 20px 2px black;`;
+    },1000)
+  }
+},1000)
+
+setInterval(function () {
+  let time = new Date();
+  let h = time.getHours();
+  
+ 
+   k1.style.transform = `rotate(${h*30}deg)`;
+ 
+  if (h==0) {
+    document.querySelector('.clock').style.cssText=`background : rgb(0,255,0); box-shadow : 0 0 20px 2px rgb(0,255,0);`;
+    setTimeout(function () {
+       document.querySelector('.clock').style.cssText=`background : rgb(255,0,0); box-shadow : 0 0 20px 2px black;`;
+    },1000)
+  }
+},1000)
+function send() {
+let n = document.getElementById('name').value;
+let e = document.getElementById('email').value;
+ let v = document.getElementById('message').value;
+const s = `https://wa.me/212633549914?text=${n} ${e} ${v}`;
+ window.location.href= s;
+}
+
+
+
+</script>
+</body>
+</html>
